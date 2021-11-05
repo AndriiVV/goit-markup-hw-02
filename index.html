@@ -12,18 +12,18 @@
   <!-- Заголовок сайта -->
   <header>
     <nav>
-      <a href="./" class="logo">Web<span class="logo-right">Studio</span></a>
+      <a href="./index.html" class="logo">Web<span class="logo-right">Studio</span></a>
 
       <ul class="site-nav list">
-        <li><a href="">Студия</a></li>
-        <li><a href="">Портфолио</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a href="./index.html" class="link current">Студия</a></li>
+        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+        <li><a href="" class="link">Контакты</a></li>
       </ul>
     </nav> 
 
     <ul class="site-contacts list">
-      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+      <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
     </ul>
         
   </header>
@@ -32,17 +32,17 @@
     <!-- Шапка сайта -->
     <section>
       <h1>Эффективные решения для вашего бизнеса</h1>
-      <button type="button">Заказать услугу</button>
+      <button type="button" class="button primary">Заказать услугу</button>
     </section>
 
-    <!-- Чем мы занимаемся -->
+    <!-- Особенности -->
     <section>
-      <h2>Чем мы занимаемся</h2>
+      <h2>Особенности <sup>*</sup> </h2> <!-- Этот заголовок скроем при оформлении -->
 
-      <ul>
+      <ul class="features list">
         <li>
-          <h3>Внимание к деталям</h3>
-          <p>
+          <h3 class="title">Внимание к деталям</h3>
+          <p class="text">
             Идейные соображения, а также
             начало повседневной работы по
             формированию позиции.
@@ -50,8 +50,8 @@
         </li>
 
         <li>
-          <h3>Пунктуальность</h3>
-          <p>
+          <h3 class="title">Пунктуальность</h3>
+          <p class="text">
             Задача организации, в особенности
             же рамки и место обучения кадров
             влечет за собой.
@@ -59,8 +59,8 @@
         </li>
 
         <li>
-          <h3>Планирование</h3>
-          <p>
+          <h3 class="title">Планирование</h3>
+          <p class="text">
             Равным образом консультация с
             широким активом в значительной
             степени обуславливает.
@@ -68,8 +68,8 @@
         </li>
 
         <li>
-          <h3>Современные технологии</h3>
-          <p>
+          <h3 class="title">Современные технологии</h3>
+          <p class="text">
             Значимость этих проблем настолько
             очевидна, что реализация плановых
             заданий.
@@ -78,11 +78,11 @@
       </ul>
     </section>
 
-    <!-- Наши инструменты -->
+    <!-- Чем мы занимаемся -->
     <section>
-      <h2>Наши инструменты<sup>*</sup></h2> <!-- скроем заголовок с помощью css :-) -->
+      <h2 class="section-title">Чем мы занимаемся</h2>
 
-      <ul>
+      <ul class="list">
         <li>
           <img src="./images/img1.jpg" alt="Our business - image 1" width="370">
         </li>
@@ -97,31 +97,31 @@
 
     <!-- Наша команда -->
     <section>
-      <h2>Наша команда</h2>
+      <h2 class="section-title">Наша команда</h2>
 
-      <ul>
+      <ul class="employee list">
         <li>
           <img src="./images/photo1.jpg" alt="Product Designer photo" width="270">
-          <h3>Игорь Демьяненко</h3>
-          <p>Product Designer</p>
+          <h3 class="title">Игорь Демьяненко</h3>
+          <p class="position">Product Designer</p>
         </li>
 
         <li>
           <img src="./images/photo2.jpg" alt="Frontend Developer photo" width="270">
-          <h3>Ольга Репина</h3>
-          <p>Frontend Developer</p>
+          <h3 class="title">Ольга Репина</h3>
+          <p class="position">Frontend Developer</p>
         </li>
 
         <li>
           <img src="./images/photo3.jpg" alt="Marketing Manager photo" width="270">
-          <h3>Николай Тарасов</h3>
-          <p>Marketing</p>
+          <h3 class="title">Николай Тарасов</h3>
+          <p class="position">Marketing</p>
         </li>
 
         <li>
           <img src="./images/photo4.jpg" alt="UI Designer photo" width="270">
-          <h3>Михаил Ермаков</h3>
-          <p>UI Designer</p>
+          <h3 class="title">Михаил Ермаков</h3>
+          <p class="position">UI Designer</p>
         </li>
 
       </ul>
@@ -133,8 +133,8 @@
   <!-- Нижний колонтитул -->  
   <footer>
 
-    <a href="./">WebStudio</a>
-
+    <a href="./" class="logo">Web<span class="logo-bottom">Studio</span></a>
+    
     <address>
       <p>г. Киев, пр-т Леси Украинки, 26</p>
       <a href="mailto:info@example.com">info@example.com</a>

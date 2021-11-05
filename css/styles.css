@@ -1,4 +1,4 @@
-/* Основные цвета
+/* Основные цвета макета
 
     цвет заголовка страницы     #FFFFFF
     
@@ -23,10 +23,27 @@
     цвет фона подвала           #2F303A
 */
 
+/* Блок css-переменных */
+:root {
+	--main-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196f3;
+	--primary-bg-color: #ffffff;
+	--top-section-bg-color: #2f303a;
+	--team-section-bg-color: #f5f4fa;
+	--footer-bg-color: #2f303a;
+	--footer-text-color: rgba(255, 255, 255, 0.6);
+	--logo-right-color: #000000;
+	--logo-bottom-right-color: #ffffff;
+	--primary-button-text-color: #ffffff;
+	--primary-button-bg-color: #2196f3;
+	--button-text-color: #212121;
+	--button-bg-color: #f5f4fa;
+}
 /* Класс для оформления основной страницы */
 .page {
-	background-color: #ffffff;
-	color: #757575;
+	background-color: var(--primary-bg-color);
+	color: var(--main-text-color);
 }
 
 /* Класс для обнуления атрибутов списка */
@@ -34,22 +51,80 @@
 	list-style: none;
 }
 
-/* Класс для оформления лого сайта */
+/* Классы для оформления лого сайта */
 .logo {
-	color: #2196f3;
+	color: var(--accent-color);
 }
 
-/* Класс для оформления правой части лого сайта */
 .logo-right {
-	color: #000000;
+	color: var(--logo-right-color);
+}
+
+.logo-bottom {
+	color: var(--logo-bottom-right-color);
 }
 
 /* Стилизация навигации сайта */
-.site-nav {
-	color: #212121;
+.site-nav .link {
+	color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+	color: var(--accent-color);
 }
 
 /* Стилизация контактов сайта */
-.site-contacts {
-	color: #757575;
+.site-contacts .link {
+	color: var(--main-text-color);
 }
+
+/* Стилизация ссылок для состояний hover, focus */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+	color: var(--accent-color);
+}
+
+/* Класс для оформления заголовков разделов */
+.section-title {
+	color: var(--title-text-color);
+}
+
+/* Классы для оформления раздела Особенности */
+.features .title {
+	color: var(--title-text-color);
+}
+
+.features .text {
+	color: var(--main-text-color);
+}
+
+/* Классы для оформления информации о сотрудниках */
+.employee .title {
+	color: var(--title-text-color);
+}
+
+.employee .position {
+	color: var(--main-text-color);
+}
+
+/* Классы для оформления кнопок */
+.button {
+	color: var(--button-text-color);
+	background-color: var(--button-bg-color);
+	border-style: none;
+}
+
+.button.primary {
+	color: var(--primary-button-text-color);
+	background-color: var(--primary-button-bg-color);
+}
+
+.button:hover,
+.button:focus {
+	color: var(--primary-button-text-color);
+	background-color: var(--primary-button-bg-color);
+}
+
+/*  */
