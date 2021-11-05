@@ -109,6 +109,15 @@
 	color: var(--main-text-color);
 }
 
+/* Классы для оформления информации о проектах */
+.projects .title {
+	color: var(--title-text-color);
+}
+
+.projects .category {
+	color: var(--main-text-color);
+}
+
 /* Классы для оформления кнопок */
 .button {
 	color: var(--button-text-color);
