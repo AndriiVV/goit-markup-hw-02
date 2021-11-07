@@ -71,6 +71,11 @@
 	text-decoration: none;
 }
 
+.footer .contacts:hover,
+.footer .contacts:focus {
+	color: var(--accent-color);
+}
+
 /* Стилизация навигации сайта */
 .site-nav .link {
 	color: var(--title-text-color);
